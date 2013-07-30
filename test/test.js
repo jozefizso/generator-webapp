@@ -12,7 +12,7 @@ describe('Webapp generator test', function () {
         return done(err);
       }
 
-      this.webapp = helpers.createGenerator('webapp:app', [
+      this.webapp = helpers.createGenerator('mywebapp:app', [
         '../../app', [
           helpers.createDummyGenerator(),
           'mocha:app'
@@ -36,38 +36,9 @@ describe('Webapp generator test', function () {
       'app/favicon.ico',
       'app/robots.txt',
       'app/index.html',
-      'app/scripts/hello.coffee',
-      'app/scripts/main.js',
-      'app/styles/main.scss'
+      'app/js/main.js',
+      'app/css/site.css'
     ];
-
-    helpers.mockPrompt(this.webapp, {
-      features: ['compassBootstrap', 'includeRequireJS']
-    });
-
-    this.webapp.options['skip-install'] = true;
-    this.webapp.run({}, function () {
-      helpers.assertFiles(expected);
-      done();
-    });
-  });
-
-  it('creates expected files in AMD mode', function (done) {
-    var expected= [
-      ['bower.json', /"name": "temp"/],
-      ['package.json', /"name": "temp"/],
-      'Gruntfile.js',
-      'app/404.html',
-      'app/favicon.ico',
-      'app/robots.txt',
-      'app/index.html',
-      ['app/scripts/main.js', /require\.config/],
-      'app/styles/main.scss'
-    ];
-
-    helpers.mockPrompt(this.webapp, {
-      features: ['compassBootstrap', 'includeRequireJS']
-    });
 
     this.webapp.options['skip-install'] = true;
     this.webapp.run({}, function () {

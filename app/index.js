@@ -107,6 +107,7 @@ AppGenerator.prototype.editorConfig = function editorConfig() {
 AppGenerator.prototype.h5bp = function h5bp() {
   this.copy('app/favicon.ico', 'app/favicon.ico');
   this.copy('app/404.html', 'app/404.html');
+  this.copy('app/index.html', 'app/index.html');
   this.copy('app/robots.txt', 'app/robots.txt');
   this.copy('app/htaccess', 'app/.htaccess');
 };
