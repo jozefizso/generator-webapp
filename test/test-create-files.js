@@ -26,11 +26,13 @@ describe('Webapp generator test', function () {
     var expected = [
       ['bower.json', /"name": "temp"/],
       ['package.json', /"name": "temp"/],
+      '.jshintrc',
       'Gruntfile.js',
       'app/404.html',
       'app/favicon.ico',
       'app/robots.txt',
       'app/index.html',
+      'app/js/.jshintrc',
       'app/js/main.js',
       'app/css/site.css'
     ];

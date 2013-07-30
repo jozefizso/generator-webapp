@@ -228,24 +228,19 @@ module.exports = function (grunt) {
       styles: {
         expand: true,
         dot: true,
-        cwd: '<%%= yeoman.app %>/styles',
+        cwd: '<%%= yeoman.app %>/css',
         dest: '.tmp/css/',
         src: '{,*/}*.css'
       }
     },
     concurrent: {
       server: [
-        'compass',
-        'coffee:dist',
         'copy:styles'
       ],
       test: [
-        'coffee',
         'copy:styles'
       ],
       dist: [
-        'coffee',
-        'compass',
         'copy:styles',
         'imagemin',
         'htmlmin'
@@ -268,13 +263,6 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'concurrent:test',
-    'autoprefixer',
-    'connect:test',
-  ]);
-
   grunt.registerTask('build', [
     'clean:dist',
     'useminPrepare',
@@ -290,7 +278,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'jshint',
-    'test',
     'build'
   ]);
 };

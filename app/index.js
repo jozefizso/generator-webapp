@@ -98,6 +98,7 @@ AppGenerator.prototype.bower = function bower() {
 
 AppGenerator.prototype.jshint = function jshint() {
   this.copy('jshintrc', '.jshintrc');
+  this.copy('app/jshintrc', 'app/js/.jshintrc');
 };
 
 AppGenerator.prototype.editorConfig = function editorConfig() {
