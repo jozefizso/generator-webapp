@@ -12,7 +12,7 @@ describe('Webapp generator test', function () {
         return done(err);
       }
 
-      this.webapp = helpers.createGenerator('mywebapp:app', [
+      this.webapp = helpers.createGenerator('webapp:app', [
         '../../app', [
           helpers.createDummyGenerator(),
           'mocha:app'
@@ -20,11 +20,6 @@ describe('Webapp generator test', function () {
       ]);
       done();
     }.bind(this));
-  });
-
-  it('the generator can be required without throwing', function () {
-    // not testing the actual run of generators yet
-    this.app = require('../app');
   });
 
   it('creates expected files in non-AMD mode', function (done) {
