@@ -1,6 +1,8 @@
-# Web app generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-webapp.png?branch=master)](http://travis-ci.org/yeoman/generator-webapp)
+# Web application generator
 
-Yeoman generator that scaffolds out a front-end web app.
+[![Build Status](https://secure.travis-ci.org/jozefizso/generator-webapp.png?branch=feature_mywebapp)](http://travis-ci.org/jozefizso/generator-webapp)
+
+Yeoman generator that scaffolds out a front-end web app. Based on the [generator-webapp](https://github.com/yeoman/generator-webapp).
 
 
 ## Getting Started
@@ -15,10 +17,6 @@ Yeoman generator that scaffolds out a front-end web app.
 * `--skip-install`
 
   Skips the automatic execution of `bower` and `npm` after scaffolding has finished.
-
-* `--test-framework <framework>`
-
-  Defaults to `mocha`. Can be switched for another supported testing framework like `jasmine`.
 
 
 ## Contribute

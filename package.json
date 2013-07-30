@@ -1,22 +1,24 @@
 {
-  "name": "generator-webapp",
+  "name": "generator-mywebapp",
   "version": "0.2.6",
-  "description": "Default Yeoman generator for scaffolding out a front-end web app",
+  "description": "Yeoman generator for scaffolding out a front-end web app.",
   "keywords": [
     "yeoman-generator",
     "web",
     "app",
     "front-end",
     "h5bp",
-    "modernizr"
+    "modernizr",
+    "html5",
+    "bootstrap"
   ],
-  "homepage": "https://github.com/yeoman/generator-webapp",
-  "bugs": "https://github.com/yeoman/generator-webapp/issues",
-  "author": "Chrome Developer Relations",
+  "homepage": "https://github.com/jozefizso/generator-webapp",
+  "bugs": "https://github.com/jozefizso/generator-webapp/issues",
+  "author": "Jozef Izso, Chrome Developer Relations",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/yeoman/generator-webapp.git"
+    "url": "git://github.com/jozefizso/generator-webapp.git"
   },
   "scripts": {
     "test": "mocha --reporter spec"
