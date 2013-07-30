@@ -1,8 +1,9 @@
 {
-  "node": false,
   "browser": true,
   "jquery": true,
-  "es5": true,
+  "devel": true,
+
+  "node": false,
 
   "esnext": false,
   "bitwise": true,

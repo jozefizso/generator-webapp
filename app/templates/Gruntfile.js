@@ -107,8 +107,8 @@ module.exports = function (grunt) {
         },
         files: {
          src: [
-            '<%= yeoman.app %>/js/{,*/}*.js',
-            '!<%= yeoman.app %>/js/vendor/*'
+            '<%%= yeoman.app %>/js/{,*/}*.js',
+            '!<%%= yeoman.app %>/js/vendor/*'
           ]
         }
       }
